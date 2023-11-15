@@ -94,8 +94,7 @@ class _CustomInfoWindowState extends State<CustomInfoWindow> {
         .getScreenCoordinate(_latLng!);
     double devicePixelRatio =
         Platform.isAndroid ? MediaQuery.of(context).devicePixelRatio : 1.0;
-    double left =
-        (screenCoordinate.x.toDouble() / devicePixelRatio) - (widget.width / 2);
+    double left = (screenCoordinate.x.toDouble() / devicePixelRatio) - (widget.width / 1.8);
     double top = (screenCoordinate.y.toDouble() / devicePixelRatio) -
         (widget.offset + widget.height);
     setState(() {
